@@ -1,0 +1,137 @@
+/* reset css */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  } 
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* styling */
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.img-container{
+    height: 100vh;
+    width: 40vw;
+    min-width: 360px;
+    background: url(./pietro-de-grandi-Q5dMq3cKqec-unsplash.jpg);
+    background-size: cover;
+ 
+}
+
+.img-container p{
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    flex:auto;
+}
+
+.title-section{
+    margin: 40px;
+    margin-top: 120px;
+    margin-left: 180px;
+    flex:auto;
+    display: flex;
+}
+
+.title-section h1{
+    align-self: flex-end;
+}
+
+.form-info-section,
+.account-section{
+    margin: 0 180px;
+    display: flex;
+    flex-direction: column;
+    flex:auto;
+}
+
+.form-info-section{
+    justify-content: center;
+}
+
+.form-row-1,
+.form-row-2,
+.form-row-3{
+    display: flex;
+    gap: 80px;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.hint{
+    display: none;
+    font-size: 0.8rem;
+    color:#D55C5F;
+}
+
+.form-row input{
+    border: 1px solid #E5E7EB;
+}
+
+.form-row input:invalid{
+    border: 2px solid #D55C5F;
+    display: block;
+}
+
+
+button{
+    max-width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: darkcyan;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+button:active{
+    background-color: darkcyan;
+}
+
+a{
+    color:darkcyan;
+    font-weight:bold;
+}
+
+a:hover{
+    color: darkgreen;
+}
